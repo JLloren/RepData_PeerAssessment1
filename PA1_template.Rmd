@@ -62,7 +62,7 @@ data_all$week<-weekdays(data_all$date)
 for (i in 1:nrow(data_all)){
   if (data_all[i,4]%in%c("sábado","domingo"))
     data_all[i,4]<-"Weeekend"
-  else data_all[i,4]<-"Weekday"
+  else data_all[i,4]<-"Weekday" 
 }
 ```
 The following plot shows the differences between workdays and weekends
